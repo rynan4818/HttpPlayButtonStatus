@@ -4,7 +4,7 @@
 
 なお、デンパ時計さんがメンテされている[HttpSiraStatus](https://github.com/denpadokei/HttpSiraStatus)の使用が必須です。
 
-[![Watch the video](https://img.youtube.com/vi/RmK7slWbJ5I/hqdefault.jpg)](https://youtu.be/RmK7slWbJ5I)
+https://user-images.githubusercontent.com/14249877/187076201-8d6d8cb5-152b-48ef-adfd-d4d32567cf08.mp4
 
 # インストール方法
 
