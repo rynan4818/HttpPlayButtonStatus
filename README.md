@@ -55,3 +55,4 @@ MODの設定画面が不要な場合は、目玉アイコンからPlay Button St
 
 `PlayButtonEnable`, `SceneChangeEnable`, `PlayButtonDelay`はMODの設定画面から変更できます。
 
+![image](https://user-images.githubusercontent.com/14249877/187057715-28665ead-d923-4501-9050-fb506cba21b4.png)
