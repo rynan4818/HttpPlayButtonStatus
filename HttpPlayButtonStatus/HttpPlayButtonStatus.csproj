@@ -31,6 +31,8 @@
     <OutputPath>bin\Release\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition="$(DefineConstants.Contains('CIBuild')) OR '$(NCrunch)' == '1'">
     <DisableCopyToPlugins>True</DisableCopyToPlugins>
@@ -42,6 +44,11 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>$(BeatSaberDir)\Libs\0Harmony.dll</HintPath>
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="BSML">
+      <HintPath>$(BeatSaberDir)\Plugins\BSML.dll</HintPath>
       <Private>False</Private>
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -117,14 +124,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameSceneController.cs" />
-    <Compile Include="HarmonyPatches\RestartLevelPatch.cs" />
+    <Compile Include="Configuration\PluginConfig.cs" />
+    <Compile Include="HarmonyPatches\HandlePauseMenuManagerDidPressMenuButtonPatch.cs" />
+    <Compile Include="Models\GameSceneController.cs" />
+    <Compile Include="HarmonyPatches\HandlePauseMenuManagerDidPressRestartButtonPatch.cs" />
     <Compile Include="HarmonyPatches\StartLevelPatch.cs" />
     <Compile Include="Installers\PlayButtonAppInstaller.cs" />
     <Compile Include="Installers\PlayButtonGameInstaller.cs" />
-    <Compile Include="PlayButtonController.cs" />
+    <Compile Include="Installers\PlayButtonMenuInstaller.cs" />
+    <Compile Include="Models\PlayButtonController.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SettingTabViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="manifest.json" />
@@ -132,6 +143,9 @@
   <ItemGroup>
     <None Include="Directory.Build.props" Condition="Exists('Directory.Build.props')" />
     <None Include="HttpPlayButtonStatus.csproj.user" Condition="Exists('HttpPlayButtonStatus.csproj.user')" />
+    <EmbeddedResource Include="Views\SettingTabViewController.bsml">
+      <DependentUpon>SettingTabViewController.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BeatSaberModdingTools.Tasks">

@@ -1,0 +1,12 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+	xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+  <vertical>
+    <checkbox-setting text="Scene Change" value="SceneChangeEnable"  apply-on-change="true"></checkbox-setting>
+    <checkbox-setting text="Play Button Start Change" value="PlayButtonEnable"  apply-on-change="true"></checkbox-setting>
+    <increment-setting text="Play Button Change Delay" value="PlayButtonDelay"  increment="0.05" min="0" formatter="PlayButtonDelayFormatter" apply-on-change="true"></increment-setting>
+    <button text='Menu Scene' on-click='OptionScene0'></button>
+    <button text='~option-scene-name1' on-click='OptionScene1'></button>
+    <button text='~option-scene-name2' on-click='OptionScene2'></button>
+    <button text='~option-scene-name3' on-click='OptionScene3'></button>
+  </vertical>
+</bg>

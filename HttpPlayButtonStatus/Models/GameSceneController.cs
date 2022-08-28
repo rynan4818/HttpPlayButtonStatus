@@ -1,7 +1,7 @@
 ﻿using HttpSiraStatus.Interfaces;
 using Zenject;
 
-namespace HttpPlayButtonStatus
+namespace HttpPlayButtonStatus.Models
 {
     public class GameSceneController : IInitializable
     {
@@ -9,11 +9,11 @@ namespace HttpPlayButtonStatus
         [Inject]
         public GameSceneController(IStatusManager statusManager)
         {
-            _statusManager = statusManager;
+            this._statusManager = statusManager;
         }
         public void Initialize()
         {
-            this._statusManager.OtherJSON["HttpPlayButtonStatus"].Clear();
+            this._statusManager.OtherJSON.Remove("HttpPlayButtonStatus");
         }
     }
 }

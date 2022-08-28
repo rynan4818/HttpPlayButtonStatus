@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using HttpPlayButtonStatus.Models;
+using Zenject;
 
 namespace HttpPlayButtonStatus.Installers
 {
@@ -8,6 +9,5 @@ namespace HttpPlayButtonStatus.Installers
         {
             this.Container.BindInterfacesAndSelfTo<GameSceneController>().AsSingle().NonLazy();
         }
-
     }
 }

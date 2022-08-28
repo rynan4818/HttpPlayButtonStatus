@@ -1,4 +1,5 @@
-﻿using Zenject;
+﻿using HttpPlayButtonStatus.Models;
+using Zenject;
 
 namespace HttpPlayButtonStatus.Installers
 {

@@ -3,9 +3,9 @@ using System;
 
 namespace HttpPlayButtonStatus.HarmonyPatches
 {
-    [HarmonyPatch(typeof(StandardLevelRestartController))]
-    [HarmonyPatch("RestartLevel", MethodType.Normal)]
-    public class RestartLevelPatch
+    [HarmonyPatch(typeof(PauseController))]
+    [HarmonyPatch("HandlePauseMenuManagerDidPressRestartButton", MethodType.Normal)]
+    public class HandlePauseMenuManagerDidPressRestartButtonPatch
     {
         public static event Action<bool> OnRestartLevel;
         static bool Prefix()
