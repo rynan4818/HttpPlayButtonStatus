@@ -26,7 +26,7 @@
 
 HttpPlayButtonStatusをインストールすると、下記画面の様なゲームプレイのMOD設定にPLAY BUTTON STATUSが追加されます。
 
-
+![image](https://user-images.githubusercontent.com/14249877/187055755-e2df84c3-c2aa-46cc-a560-aac88ac2f754.png)
 
 - Scene Change : 自動シーン切り替え機能のON/OFFを設定します。
 - Play Button Start Change : PLAYボタンを押した瞬間にゲームシーンに切り替えます。OFFにすると従来どおりの動作になります。
@@ -35,6 +35,8 @@ HttpPlayButtonStatusをインストールすると、下記画面の様なゲー
 - OPTION SCENE 1~3 : オプション用のシーンに手動で切り替えます。(項目名は設定ファイルで変更可能)
 
 MODの設定画面が不要な場合は、目玉アイコンからPlay Button StatusをOFFにすると設定画面が消えます。
+
+![image](https://user-images.githubusercontent.com/14249877/187055778-722ecdf7-56df-4c21-9dba-2b37af46866d.png)
 
 # 設定ファイル
 
