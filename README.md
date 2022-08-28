@@ -4,6 +4,8 @@
 
 なお、デンパ時計さんがメンテされている[HttpSiraStatus](https://github.com/denpadokei/HttpSiraStatus)の使用が必須です。
 
+[![Watch the video](https://img.youtube.com/vi/RmK7slWbJ5I/hqdefault.jpg)](https://youtu.be/RmK7slWbJ5I)
+
 # インストール方法
 
 1. [HttpSiraStatus](https://github.com/denpadokei/HttpSiraStatus/releases)と[Beat Saber Overlay 改良版](https://github.com/rynan4818/beat-saber-overlay)および、[obs-control](https://github.com/rynan4818/obs-control)または、[Streamlabs-obs-control](https://github.com/rynan4818/Streamlabs-obs-control)をインストールして動作するか確認します。
