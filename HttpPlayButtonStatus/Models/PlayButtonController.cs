@@ -29,7 +29,8 @@ namespace HttpPlayButtonStatus.Models
             rootObj["PlayButtonDelay"] = PluginConfig.Instance.PlayButtonDelay;
             rootObj["LevelID"] = StartLevelPatch.levelID;
             rootObj["SongName"] = StartLevelPatch.songName;
-            rootObj["SongHash"] = Regex.IsMatch(StartLevelPatch.levelID, "^custom_level_[0-9A-F]{40}", RegexOptions.IgnoreCase) && !StartLevelPatch.levelID.EndsWith(" WIP") ? StartLevelPatch.levelID.Substring(13, 40) : null;
+            if (StartLevelPatch.levelID != null)
+                rootObj["SongHash"] = Regex.IsMatch(StartLevelPatch.levelID, "^custom_level_[0-9A-F]{40}", RegexOptions.IgnoreCase) && !StartLevelPatch.levelID.EndsWith(" WIP") ? StartLevelPatch.levelID.Substring(13, 40) : null;
             this._statusManager.OtherJSON["HttpPlayButtonStatus"] = rootObj;
             this._statusManager.EmitStatusUpdate(ChangedProperty.Other, BeatSaberEvent.Other);
         }
