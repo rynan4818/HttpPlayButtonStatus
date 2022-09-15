@@ -4,7 +4,7 @@
 
 なお、デンパ時計さんがメンテされている[HttpSiraStatus](https://github.com/denpadokei/HttpSiraStatus)の使用が必須です。
 
-[![Watch the video](https://img.youtube.com/vi/RmK7slWbJ5I/hqdefault.jpg)](https://youtu.be/RmK7slWbJ5I)
+https://user-images.githubusercontent.com/14249877/187076201-8d6d8cb5-152b-48ef-adfd-d4d32567cf08.mp4
 
 # インストール方法
 
@@ -55,3 +55,4 @@ MODの設定画面が不要な場合は、目玉アイコンからPlay Button St
 
 `PlayButtonEnable`, `SceneChangeEnable`, `PlayButtonDelay`はMODの設定画面から変更できます。
 
+![image](https://user-images.githubusercontent.com/14249877/187057715-28665ead-d923-4501-9050-fb506cba21b4.png)
