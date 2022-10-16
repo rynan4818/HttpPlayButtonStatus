@@ -2,7 +2,7 @@
 using System;
 using System.Text.RegularExpressions;
 using HttpPlayButtonStatus.HarmonyPatches;
-using HttpSiraStatus;
+using HttpSiraStatus.Enums;
 using HttpSiraStatus.Interfaces;
 using HttpSiraStatus.Util;
 using Zenject;

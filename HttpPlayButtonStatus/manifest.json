@@ -5,11 +5,11 @@
   "author": "Rynan",
   "version": "0.1.1",
   "description": "Send play button press event with HttpSiraStatus",
-  "gameVersion": "1.20.0",
+  "gameVersion": "1.21.0",
   "dependsOn": {
     "BSIPA": "^4.2.2",
     "BeatSaberMarkupLanguage": "^1.6.3",
     "SiraUtil": "^3.0.5",
-    "HttpSiraStatus": ">=7.0.0"
+    "HttpSiraStatus": ">=9.0.0"
   }
 }
