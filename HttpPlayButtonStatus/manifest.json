@@ -3,13 +3,13 @@
   "id": "HttpPlayButtonStatus",
   "name": "HttpPlayButtonStatus",
   "author": "Rynan",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Send play button press event with HttpSiraStatus",
-  "gameVersion": "1.21.0",
+  "gameVersion": "1.31.0",
   "dependsOn": {
-    "BSIPA": "^4.2.2",
-    "BeatSaberMarkupLanguage": "^1.6.3",
-    "SiraUtil": "^3.0.5",
+    "BSIPA": "^4.3.0",
+    "BeatSaberMarkupLanguage": "^1.7.6",
+    "SiraUtil": "^3.1.3",
     "HttpSiraStatus": ">=9.0.0"
   }
 }
