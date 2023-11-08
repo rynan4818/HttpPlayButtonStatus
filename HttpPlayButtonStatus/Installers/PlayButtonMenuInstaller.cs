@@ -7,7 +7,7 @@ namespace HttpPlayButtonStatus.Installers
     {
         public override void InstallBindings()
         {
-            this.Container.BindInterfacesAndSelfTo<SettingTabViewController>().FromNewComponentAsViewController().AsSingle().NonLazy();
+            this.Container.BindInterfacesAndSelfTo<SettingTabViewController>().AsSingle().NonLazy();
         }
     }
 }
