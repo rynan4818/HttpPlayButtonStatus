@@ -13,11 +13,17 @@ namespace HttpPlayButtonStatus.Views
         private bool _disposedValue;
         public const string TabName = "Play Button Status";
         public string ResourceName => string.Join(".", GetType().Namespace, GetType().Name);
-        [Inject]
-        private PlayButtonController _playButtonController;
+        private readonly PlayButtonController _playButtonController;
+        private readonly GameplaySetup _gameplaySetup;
+        public SettingTabViewController(PlayButtonController playButtonController, GameplaySetup gameplaySetup)
+        {
+            this._playButtonController = playButtonController;
+            this._gameplaySetup = gameplaySetup;
+        }
+
         public void Initialize()
         {
-            GameplaySetup.instance.AddTab(TabName, this.ResourceName, this);
+            this._gameplaySetup.AddTab(TabName, this.ResourceName, this);
         }
 
         protected virtual void Dispose(bool disposing)
@@ -26,7 +32,7 @@ namespace HttpPlayButtonStatus.Views
             {
                 if (disposing)
                 {
-                    GameplaySetup.instance?.RemoveTab(TabName);
+                    this._gameplaySetup?.RemoveTab(TabName);
                 }
                 this._disposedValue = true;
             }
