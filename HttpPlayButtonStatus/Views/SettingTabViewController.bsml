@@ -2,6 +2,7 @@
 	xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
   <vertical>
     <checkbox-setting text="Scene Change" value="SceneChangeEnable"  apply-on-change="true"></checkbox-setting>
+    <checkbox-setting text="Mic Mute Change" value="MicMuteChangeEnable"  apply-on-change="true"></checkbox-setting>
     <checkbox-setting text="Play Button Start Change" value="PlayButtonEnable"  apply-on-change="true"></checkbox-setting>
     <increment-setting text="Play Button Change Delay" value="PlayButtonDelay"  increment="0.05" min="0" formatter="PlayButtonDelayFormatter" apply-on-change="true"></increment-setting>
     <button text='Menu Scene' on-click='OptionScene0'></button>

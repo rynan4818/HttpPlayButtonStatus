@@ -13,7 +13,6 @@ namespace HttpPlayButtonStatus.Models
     {
         private bool _disposedValue;
         private IStatusManager _statusManager;
-        [Inject]
         public PlayButtonController(IStatusManager statusManager)
         {
             this._statusManager = statusManager;

@@ -8,6 +8,8 @@ namespace HttpPlayButtonStatus.Installers
         public override void InstallBindings()
         {
             this.Container.BindInterfacesAndSelfTo<PlayButtonController>().AsSingle();
+            this.Container.BindInterfacesAndSelfTo<KeyEventController>().AsSingle();
+            this.Container.BindInterfacesAndSelfTo<MicMuteController>().AsSingle();
         }
     }
 }

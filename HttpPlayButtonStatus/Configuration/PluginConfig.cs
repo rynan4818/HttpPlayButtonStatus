@@ -10,10 +10,18 @@ namespace HttpPlayButtonStatus.Configuration
         // BSIPAが値の変更を検出し、自動的に設定を保存したい場合は、'virtual'でなければなりません。
         public virtual bool PlayButtonEnable { get; set; } = true;
         public virtual bool SceneChangeEnable { get; set; } = true;
+        public virtual bool MicMuteChangeEnable { get; set; } = false;
         public virtual float PlayButtonDelay { get; set; } = 0f;
         public virtual string OptionSceneName1 { get; set; } = "Option Scene 1";
         public virtual string OptionSceneName2 { get; set; } = "Option Scene 2";
         public virtual string OptionSceneName3 { get; set; } = "Option Scene 3";
+        public virtual float MicMuteXposOffset { get; set; } = 0;
+        public virtual float MicMuteYposOffset { get; set; } = 0;
+        public virtual float MicMuteZposOffset { get; set; } = 0;
+        public virtual float MicMuteXrotOffset { get; set; } = 0;
+        public virtual float MicMuteYrotOffset { get; set; } = 0;
+        public virtual float MicMuteZrotOffset { get; set; } = 0;
+        public virtual float MicMuteFontSize { get; set; } = 12;
 
         /// <summary>
         /// これは、BSIPAが設定ファイルを読み込むたびに（ファイルの変更が検出されたときを含めて）呼び出されます。
