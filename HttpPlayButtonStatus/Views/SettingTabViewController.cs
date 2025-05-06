@@ -1,16 +1,16 @@
 ﻿using HttpPlayButtonStatus.Configuration;
 using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.GameplaySetup;
-using BeatSaberMarkupLanguage.ViewControllers;
 using Zenject;
 using System.Globalization;
 using HttpPlayButtonStatus.Models;
+using System;
 
 namespace HttpPlayButtonStatus.Views
 {
-    [HotReload]
-    internal class SettingTabViewController : BSMLAutomaticViewController, IInitializable
+    internal class SettingTabViewController : IInitializable, IDisposable
     {
+        private bool _disposedValue;
         public const string TabName = "Play Button Status";
         public string ResourceName => string.Join(".", GetType().Namespace, GetType().Name);
         [Inject]
@@ -19,11 +19,25 @@ namespace HttpPlayButtonStatus.Views
         {
             GameplaySetup.instance.AddTab(TabName, this.ResourceName, this);
         }
-        protected override void OnDestroy()
+
+        protected virtual void Dispose(bool disposing)
         {
-            GameplaySetup.instance.RemoveTab(TabName);
-            base.OnDestroy();
+            if (!this._disposedValue)
+            {
+                if (disposing)
+                {
+                    GameplaySetup.instance?.RemoveTab(TabName);
+                }
+                this._disposedValue = true;
+            }
         }
+        public void Dispose()
+        {
+            // このコードを変更しないでください。クリーンアップ コードを 'Dispose(bool disposing)' メソッドに記述します
+            this.Dispose(disposing: true);
+            GC.SuppressFinalize(this);
+        }
+
         [UIValue("PlayButtonEnable")]
         public bool PlayButtonEnable
         {
